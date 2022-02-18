@@ -28,8 +28,6 @@ RegisterCommand('r', function()
                 SetEntityCoordsNoOffset(vehicle, coords, 0, 0, 1)
                 SetPedIntoVehicle(ped, vehicle, -1)
                 ShowAboveRadarMessage('~g~~bold~Returned~s~ To Coordinat Point')
-            elseif not GetPedInVehicleSeat(vehicle, -1) then
-                ShowAboveRadarMessage('You Not In Driver Seat')
             end
         else
             SetEntityCoords(ped, coords, false, false, false, false)
